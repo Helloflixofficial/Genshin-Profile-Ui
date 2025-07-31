@@ -16,6 +16,44 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+const items = [
+  {
+    label: "Total Achievements",
+    value: "1113",
+    icon: "/images/Achievements.png",
+    tag: "/images/Achievements.png",
+    color: "text-yellow-600",
+  },
+  {
+    label: "Max Friendship Level",
+    value: "29",
+    icon: "/images/Achievements.png",
+    tag: "/images/Achievements.png",
+    color: "text-pink-600",
+  },
+  {
+    label: "Spiral Abyss",
+    value: "12-3",
+    icon: "/images/Achievements.png",
+    tag: "/images/Achievements.png",
+    color: "text-red-600",
+  },
+  {
+    label: "Imaginarium Theater",
+    value: "Act 10",
+    icon: "/images/Achievements.png",
+    tag: "/images/Achievements.png",
+    color: "text-purple-600",
+  },
+  {
+    label: "Stygian Onslaught",
+    value: "355s",
+    icon: "/images/Achievements.png",
+    tag: "/images/Achievements.png",
+    color: "text-orange-600",
+  },
+];
+
 // temp:  used type instead of empty interface;
 type ProfileCardProps = React.HTMLAttributes<HTMLDivElement>;
 
@@ -37,19 +75,20 @@ const ProfileCard = forwardRef(function ProfileCard(
       <div className="absolute top-2 right-2 w-3 h-3 border-r-2 border-t-2 border-amber-600 rounded-tr-lg" />
 
       {/* Background area */}
-      <div className="relative w-full aspect-[320/160] rounded-lg border-3 border-amber-600 bg-gradient-to-br from-purple-400 via-blue-500 to-purple-600 shadow-inner overflow-hidden">
-        <div className="absolute inset-2 border-2 border-dashed border-white/50 rounded flex items-center justify-center text-xs text-white font-semibold">
+      <div className="relative w-full aspect-[320/160] rounded-lg border-3 border-amber-300 bg-gradient-to-br from-purple-400 via-blue-500 to-purple-600 shadow-inner overflow-hidden">
+        {/* border-2 border-dashed */}
+        <div className="absolute inset-2  border-white/50 rounded flex items-center justify-center text-xs text-white font-semibold">
           <video
             src="/videos/background.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="absolute top-0 left-0 w-full h-full object-cover"
-            style={{ width: "100%", height: "auto", borderRadius: "12px" }}
+            className="absolute top-0 left-0 w-full h-full object-cover border-2 border-dashed"
+            style={{ width: "100%", height: "100%", borderRadius: "15px" }}
           />
         </div>
-        <div className="absolute top-2 right-2 bg-gradient-to-r from-amber-200 to-yellow-500 px-2 text-xs font-bold text-amber-700 shadow-md border border-amber-600">
+        <div className="absolute border-2 top-2 right-2 rounded-[6px] bg-gradient-to-r from-amber-200 to-yellow-500 px-2 text-xs font-bold text-amber-700 shadow-md ">
           UID:631331233
         </div>
 
@@ -121,54 +160,38 @@ const ProfileCard = forwardRef(function ProfileCard(
       <div className="bg-gradient-to-br from-orange-100 to-amber-100 rounded-md p-2 border-2 border-amber-300 shadow-inner">
         <div className="flex items-center gap-1.5 mb-2 pb-1 border-b border-amber-300">
           <Trophy className="w-4 h-4 text-yellow-600" />
-          <h3 className="font-bold text-amber-900 text-sm">Achievements</h3>
+          <h3 className="font-bold text-amber-900 text-sm">Records</h3>
         </div>
 
-        {[
-          {
-            label: "Total Achievements",
-            value: "1110",
-            icon: Award,
-            color: "text-yellow-600",
-          },
-          {
-            label: "Max Friendship Level",
-            value: "29",
-            icon: Star,
-            color: "text-pink-600",
-          },
-          {
-            label: "Spiral Abyss",
-            value: "12-3",
-            icon: Target,
-            color: "text-red-600",
-          },
-          {
-            label: "Imaginarium Theater",
-            value: "Act 10",
-            icon: Shield,
-            color: "text-purple-600",
-          },
-          {
-            label: "Stygian Onslaught",
-            value: "355s",
-            icon: Sword,
-            color: "text-orange-600",
-          },
-        ].map((item) => (
+        {items.map((item) => (
           <div
             key={item.label}
             className="flex items-center justify-between text-xs py-1"
           >
             <div className="flex items-center gap-1.5">
-              <item.icon className={`w-3 h-3 ${item.color}`} />
+              <Image
+                src={item.icon}
+                alt={item.label}
+                width={12}
+                height={12}
+                className={`object-contain ${item.color}`}
+              />
               <span className="text-amber-800 font-medium truncate">
                 {item.label}
               </span>
             </div>
-            <span className="font-bold text-amber-900 bg-amber-200 px-1.5 py-0.5 rounded text-xs">
-              {item.value}
-            </span>
+            <div className="flex items-center gap-1">
+              <span className="font-bold text-amber-900 bg-amber-200 px-1.5 py-0.5 rounded text-xs">
+                {item.value}
+              </span>
+              <Image
+                src={item.tag}
+                alt={item.label}
+                width={12}
+                height={12}
+                className={`object-contain ${item.color}`}
+              />
+            </div>
           </div>
         ))}
       </div>
