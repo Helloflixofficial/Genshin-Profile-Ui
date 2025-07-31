@@ -3,17 +3,7 @@
 import type React from "react";
 import { cn } from "@/lib/utils";
 import { type ForwardedRef, forwardRef } from "react";
-import {
-  Trophy,
-  Globe,
-  User,
-  Star,
-  Sword,
-  Shield,
-  Crown,
-  Award,
-  Target,
-} from "lucide-react";
+import { Trophy, Globe, User, Crown } from "lucide-react";
 import Image from "next/image";
 
 const items = [
