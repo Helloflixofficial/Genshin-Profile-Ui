@@ -10,36 +10,36 @@ const items = [
   {
     label: "Total Achievements",
     value: "1113",
-    icon: "/images/Achievements.png",
-    tag: "/images/Achievements.png",
+    icon: "/images/achievements.png",
+    tag: "/images/achievements.png",
     color: "text-yellow-600",
   },
   {
     label: "Max Friendship Level",
     value: "29",
-    icon: "/images/Achievements.png",
-    tag: "/images/Achievements.png",
+    icon: "/images/achievements.png",
+    tag: "/images/achievements.png",
     color: "text-pink-600",
   },
   {
     label: "Spiral Abyss",
     value: "12-3",
-    icon: "/images/Achievements.png",
-    tag: "/images/Achievements.png",
+    icon: "/images/achievements.png",
+    tag: "/images/achievements.png",
     color: "text-red-600",
   },
   {
     label: "Imaginarium Theater",
     value: "Act 10",
-    icon: "/images/Achievements.png",
-    tag: "/images/Achievements.png",
+    icon: "/images/achievements.png",
+    tag: "/images/achievements.png",
     color: "text-purple-600",
   },
   {
     label: "Stygian Onslaught",
     value: "355s",
-    icon: "/images/Achievements.png",
-    tag: "/images/Achievements.png",
+    icon: "/images/achievements.png",
+    tag: "/images/achievements.png",
     color: "text-orange-600",
   },
 ];
@@ -88,7 +88,7 @@ const ProfileCard = forwardRef(function ProfileCard(
             <div className="absolute inset-1 border border-dashed border-amber-400 rounded-full flex items-center justify-center text-center leading-tight">
               <div className="relative w-[50px] h-[50px] overflow-hidden rounded-full">
                 <Image
-                  src="/images/profile.webp"
+                  src="/characters/Aloy_Icon.png"
                   alt="profile"
                   fill
                   className="object-cover"

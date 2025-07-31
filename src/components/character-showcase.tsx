@@ -13,7 +13,7 @@ const items = [
   { icon: "/characters/Albedo_Icon.png" },
   { icon: "/characters/Furina_Icon.png" },
   { icon: "/characters/Skirk_Icon.png" },
-  { icon: "/characters/Yae_miko_Icon.png" },
+  { icon: "/characters/Yae_Miko_Icon.png" },
   { icon: "/characters/Arlecchino_Icon.png" },
   { icon: "/characters/Kaedehara_Kazuha_Icon.png" },
   { icon: "/characters/Ganyu_Icon.png" },
