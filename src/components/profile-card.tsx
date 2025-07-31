@@ -111,7 +111,10 @@ const ProfileCard = forwardRef(function ProfileCard(
 
         {/* Name */}
         <div className="absolute top-6 left-24 right-16">
-          <h2 className="text-xl font-bold text-white drop-shadow-lg">ZERO</h2>
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white drop-shadow-lg">
+            ZERO
+          </h2>
+
           <div className="w-12 h-0.5 bg-gradient-to-r from-white via-yellow-300 to-transparent mt-1" />
         </div>
 
