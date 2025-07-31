@@ -29,7 +29,7 @@ export default function Page() {
             <div className="flex gap-2 mb-6">
               <Button
                 size="sm"
-                className="bg-gradient-to-b from-amber-400 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-amber-900 font-semibold shadow-md border border-amber-700"
+                className="bg-gradient-to-b  border-b-card-foreground  from-amber-400 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-amber-900 font-semibold shadow-md border border-amber-700"
                 disabled
               >
                 Character Showcase
@@ -37,18 +37,16 @@ export default function Page() {
               <Button
                 size="sm"
                 variant="ghost"
-                className="text-amber-800 hover:bg-amber-300 hover:text-amber-900 border-2"
+                className="text-amber-800 hover:bg-amber-300  border-b-card-foreground  hover:text-amber-900 border-2"
               >
                 Namecard
               </Button>
             </div>
 
-            {/* <div className="mt-1 pt-2 flex flex-col gap-4 border-t-2 border-amber-300"></div> */}
-
             <CharacterShowcase />
 
-            <div className="mt-6 pt-2 flex flex-col gap-4 border-t-2 border-amber-300">
-              <div className="flex items-center justify-between">
+            <div className="mt-6 pt-2 flex flex-col gap-4 border-t-2  border-amber-300">
+              <div className="flex items-center justify-between ">
                 <Label htmlFor="details" className="text-amber-800 font-medium">
                   Show Character Details
                 </Label>
