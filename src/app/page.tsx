@@ -4,7 +4,7 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import CharacterShowcase from "@/components/character-showcase";
 import ProfileCard from "@/components/profile-card";
-import MenuButton from "@/components/Menu/main";
+// import MenuButton from "@/components/Menu/main";
 export default function Page() {
   return (
     <div>
@@ -70,7 +70,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <MenuButton className=" text-amber-800" />
+        {/* <MenuButton className=" text-amber-800" /> */}
       </main>
     </div>
   );
