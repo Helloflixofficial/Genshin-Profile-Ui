@@ -8,18 +8,18 @@ interface CharacterShowcaseProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const items = [
-  { icon: "/images/characters/Xilonen_Icon.png" },
-  { icon: "/images/characters/Arataki_Itto_Icon.png" },
-  { icon: "/images/characters/Albedo_Icon.png" },
-  { icon: "/images/characters/Furina_Icon.png" },
-  { icon: "/images/characters/Skirk_Icon.png" },
-  { icon: "/images/characters/Yae_miko_Icon.png" },
-  { icon: "/images/characters/Arlecchino_Icon.png" },
-  { icon: "/images/characters/Kaedehara_Kazuha_Icon.png" },
-  { icon: "/images/characters/Ganyu_Icon.png" },
-  { icon: "/images/characters/Nilou_Icon.png" },
-  { icon: "/images/characters/Diluc_Icon.png" },
-  { icon: "/images/characters/Mavuika_Icon.png" },
+  { icon: "/characters/Xilonen_Icon.png" },
+  { icon: "/characters/Arataki_Itto_Icon.png" },
+  { icon: "/characters/Albedo_Icon.png" },
+  { icon: "/characters/Furina_Icon.png" },
+  { icon: "/characters/Skirk_Icon.png" },
+  { icon: "/characters/Yae_miko_Icon.png" },
+  { icon: "/characters/Arlecchino_Icon.png" },
+  { icon: "/characters/Kaedehara_Kazuha_Icon.png" },
+  { icon: "/characters/Ganyu_Icon.png" },
+  { icon: "/characters/Nilou_Icon.png" },
+  { icon: "/characters/Diluc_Icon.png" },
+  { icon: "/characters/Mavuika_Icon.png" },
 ];
 
 export default function CharacterShowcase({
