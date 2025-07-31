@@ -121,7 +121,7 @@ const ProfileCard = forwardRef(function ProfileCard(
       </div>
 
       {/* Stats */}
-      <div className="bg-gradient-to-r from-amber-200 to-orange-200 rounded-md p-2 border-2 border-amber-400 shadow-inner">
+      <div className="bg-gradient-to-r from-amber-200 to-orange-200 rounded-md p-2 border-1 shadow-inner">
         <ul className="space-y-1 text-xs">
           {[
             {
@@ -157,7 +157,7 @@ const ProfileCard = forwardRef(function ProfileCard(
       </div>
 
       {/* Achievements */}
-      <div className="bg-gradient-to-br from-orange-100 to-amber-100 rounded-md p-2 border-2 border-amber-300 shadow-inner">
+      <div className="bg-gradient-to-br  border-b-card-foreground  from-orange-100 to-amber-100 rounded-md p-2 border-1 border-amber-300 shadow-inner">
         <div className="flex items-center gap-1.5 mb-2 pb-1 border-b border-amber-300">
           <Trophy className="w-4 h-4 text-yellow-600" />
           <h3 className="font-bold text-amber-900 text-sm">Records</h3>
