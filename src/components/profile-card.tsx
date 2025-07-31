@@ -16,7 +16,7 @@ const items = [
   },
   {
     label: "Max Friendship Level",
-    value: "29",
+    value: "30",
     icon: "/images/abyss.png",
     tag: "/images/achievements.png",
     color: "text-pink-600",
